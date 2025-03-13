@@ -2,6 +2,7 @@ package com.example.demo_application.openelective;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -9,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.demo_application.R;
+import com.example.demo_application.course.CourseMain;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -27,6 +29,10 @@ public class userDetails extends AppCompatActivity {
         textView = findViewById(R.id.userDetails);
         textView.setText("data loading...\n Please wait");
         getDetails(getIntent().getStringExtra("username"));
+        Button button = findViewById(R.id.nextButton);
+        button.setOnClickListener(v->{
+            startActivity(new Intent(this, CourseMain.class));
+        });
     }
 
     private void getDetails(String username) {
