@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">demo_application</string>
+    <array name="oe">
+        <item>Data Science</item>
+        <item>Beverage Technology</item>
+        <item>Textile</item>
+        <item>Indian Tradition foods</item>
+        <item>Blockchain Technology</item>
+        <item>Internet of Things</item>
+    </array>
+    <array name="de">
+        <item>Data Science</item>
+        <item>Artificial Intelligence</item>
+        <item>Cloud Computing</item>
+        <item>Cyber Security</item>
+        <item>Blockchain Technology</item>
+        <item>Internet of Things</item>
+    </array>
+    <array name="mh">
+        <item>Data Science</item>
+        <item>Artificial Intelligence</item>
+        <item>Cloud Computing</item>
+        <item>Cyber Security</item>
+        <item>Blockchain Technology</item>
+        <item>Internet of Things</item>
+    </array>
 </resources>

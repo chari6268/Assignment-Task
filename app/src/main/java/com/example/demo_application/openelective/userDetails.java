@@ -31,7 +31,10 @@ public class userDetails extends AppCompatActivity {
         getDetails(getIntent().getStringExtra("username"));
         Button button = findViewById(R.id.nextButton);
         button.setOnClickListener(v->{
-            startActivity(new Intent(this, CourseMain.class));
+
+            Intent intent = new Intent(this, CourseMain.class);
+            intent.putExtra("username", getIntent().getStringExtra("username"));
+            startActivity(intent);
         });
     }
 
