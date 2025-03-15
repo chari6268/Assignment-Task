@@ -103,7 +103,7 @@ public class CourseMain extends AppCompatActivity {
             return;
         }
 
-        databaseReference.child("co").child(studentBranch).addListenerForSingleValueEvent(new ValueEventListener() {
+        databaseReference.child("course").child(studentBranch).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 ArrayList<String> courses = new ArrayList<>();
